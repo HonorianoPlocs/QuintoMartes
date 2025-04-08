@@ -1,9 +1,9 @@
 {
   "name": "node",
   "version": "1.0.0",
-  "main": "Ejercicios_JS/3.js",
+  "main": "Ejercicios_JS/20.js",
   "scripts": {
-     "dev": "nodemon Ejercicios_JS/3.js"
+     "dev": "nodemon Ejercicios_JS/20.js"
   },
   "repository": {
     "type": "git",

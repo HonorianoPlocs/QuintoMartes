@@ -1,15 +1,8 @@
 let suma = 0;
-let i = 1;
-
-while (i <= 50) {
-  if (i % 2 !== 0) { // Verifica si es impar
-    suma += i; // Suma el número impar
-    
-    if (suma > 500) { // Detiene si suma supera 500
-      break;
-    }
+for (let i = 1; i <= 50; i++) {
+  if (i % 2 !== 0) {
+    suma += i;
+    if (suma > 500) break;
   }
-  i++; // Incrementa el contador
 }
-
-console.log("Suma de impares (1-50):", suma);
+console.log("Suma:", suma);

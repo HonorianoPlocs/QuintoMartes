@@ -1,7 +1,7 @@
 /**
  * Encuentra el número mayor y menor en un array
  * @param {number[]} numeros - Array de números a evaluar
- * @returns {Object} - Objeto con las propiedades mayor y menor
+  @returns {Object} - Objeto con las propiedades mayor y menor
  */
 function encontrarMayorYMenor(numeros) {
     if (numeros.length === 0) {
