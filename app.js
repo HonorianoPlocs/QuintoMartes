@@ -1,14 +1,12 @@
-function busquedalineal(arr,elemento){
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]===elemento){
-        return i;
-    }
-    }
-    return -1;
-}
+const http = require('http')
+const server = http.createServer((request, Response) => {
+    if(request.url=='/'&& request.method=='GET')
+    Response.end(JSON.stringify({"message":"Accediendo a la cupula"}))
+})
 
-const arreglo=[10,2,3,8,4,9,7];
-const elementobuscado=7;
-const indice=busquedalineal(arreglo,elementobuscado);
-console.log(`El Elegarcio ${elementobuscado} se encuentra en el indice ${indice}`)
+const port = 5000
+const host = "localhost"
 
+server.listen(port, host, () => {
+    console.log(`Servidor ejecutandose en: http://${port}:${host}`)
+})

@@ -1,9 +1,9 @@
 {
   "name": "node",
   "version": "1.0.0",
-  "main": "Ejercicios_JS/20.js",
+  "main": "app.js",
   "scripts": {
-     "dev": "nodemon Ejercicios_JS/20.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
     "url": "https://github.com/HonorianoPlocs/QuintoMartes/issues"
   },
   "homepage": "https://github.com/HonorianoPlocs/QuintoMartes#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
