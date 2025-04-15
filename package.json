@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "ej15": "nodemon Ejercicios_JS/15.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,8 @@
   "homepage": "https://github.com/HonorianoPlocs/QuintoMartes#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
