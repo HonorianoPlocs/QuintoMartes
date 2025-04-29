@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <%=title%>
-  <%if(showMessage){%>
-        <%=message%>
-    <%}else{%>
-            este es un mensaje por defecto
-    <%}%>
-        <ul>
-        <% for(let i=0; i<items.length;i++){%>
-            <li><%=items[i]%></li>
-        <%}%>
-        </ul>  
+  
 </head>
 <body>
-  <h1>Pimera PipoliA</h1>
+  <div id="chat">
+    <input type="text" id="username" placeholder="Ingresa tu nombreziño">
+  <div id="messages">
+    <div class="message">CondePloxiano</div>
+    <div class="message">Jimiacrota</div>
+  </div>
+  <div id="writing"></div>
+  <textarea id="writemessage" placeholder="Ingrese su mensaje"></textarea>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket=io()
+  </script>
 </body>
 </html>

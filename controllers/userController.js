@@ -6,6 +6,7 @@ exports.getAllUsers=async(req,res)=>{
     const users=await userService.getall()
     res.status(200).json(users)
 }
+
 exports.getUser=async(req,res)=>{
     const id=req.params.id
     const user=await userService.filterById(id)
@@ -14,6 +15,7 @@ exports.getUser=async(req,res)=>{
     }
     res.status(200).json(user)
 }
+
 exports.createUser=async(req,res)=>{
     try{
     let data=req.body 
@@ -21,9 +23,9 @@ exports.createUser=async(req,res)=>{
     res.status(201).send('usuario registrado')
     }catch(error){
         res.status(500).json({"error":error.message})
-    }
-    
+    }    
 }
+
 exports.updateUser=async(req,res)=>{
     let data=req.body
     const id=req.params.id
@@ -34,6 +36,7 @@ exports.updateUser=async(req,res)=>{
     await userService.update(id,data)
     res.status(20).send('se modificó el registro de manera satisfactoria wuazaaaa')
 }
+
 exports.deleteUser=async(req,res)=>{
     const id=req.params.id
     const user=await userService.filterById(id)
